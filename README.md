@@ -40,38 +40,51 @@ Projede aşağıdaki API'ler bulunmaktadır:
 
 ## Ekran Görüntüleri
 
+
 ### Giriş Sayfası
 ![Giriş Sayfası](images/login.png)
+
 ![Giriş Sayfası Alternatif](images/login2.png)
+
 
 ### Parça Üretim Ekranı
 ![Parça Üretimi](images/parca_uretim.png)
 ![Parça Üretimi 2](images/parca_uretim2.png)
 
+
 ### Parçalar Listesi
 ![Parçalar Listesi](images/parcalar.png)
+
 
 ### Montaj Ekranı
 ![Montaj Ekranı](images/montaj_giris.png)
 
+
 ### Üretilen Uçakların Detayları
 ![Üretilen Uçak 1](images/ucak_uret1.png)
+
 ![Üretilen Uçak 2](images/ucak_uret2.png)
+
 ![Üretilen Uçak 3](images/ucak_uret3.png)
+
 ![Üretilen Uçak 4](images/ucak_uret4.png)
+
 ![Üretilen Uçak 5](images/ucak_uret5.png)
+
 
 ### Parça Geri Dönüşüm
 ![Parça Geri Dönüşüm](images/geri_donusum.png)
 
-### Admin Panel - Uçaklar
-![Admin Panel - Uçaklar](images/admin_ucaks.png)
 
-### Admin Panel - Üretilen Uçaklar
-![Admin Panel - Üretilen Uçaklar](images/admin_uretilen_ucaks.png)
+### Admin Paneli
+![Admin Panel 1](images/admin_ucaks.png)
+
+![Admin Panel 2](images/admin_uretilen_ucaks.png)
+
 
 ### Eksik Parça Uyarısı
 ![Eksik Parça Uyarısı](images/eksik_parca.png)
+
 
 ## Veritabanı Şeması
 
