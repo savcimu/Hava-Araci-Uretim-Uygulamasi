@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Parça Üret{% endblock %}
+
+{% block content %}
+    <h1>Parça Üretimi</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="parca_tipi" class="form-label">Parça Tipi:</label>
+            <select id="parca_tipi" name="parca_tipi" class="form-select" required>
+                <option value="{{ uygun_parca_tipi }}">{{ uygun_parca_tipi }}</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="ucak" class="form-label">Uçak:</label>
+            <select id="ucak" name="ucak" class="form-select" required>
+                {% for ucak in ucaklar %}
+                    <option value="{{ ucak.id }}">{{ ucak.ad }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Üret</button>
+    </form>
+{% endblock %}
