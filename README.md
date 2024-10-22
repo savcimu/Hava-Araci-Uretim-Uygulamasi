@@ -8,7 +8,6 @@ Bu proje, İHA parçalarının üretimini ve montajını yönetmeyi amaçlayan b
 - [API Belgeleri](#api-belgeleri)
 - [Ekran Görüntüleri](#ekran-görüntüleri)
 - [Veritabanı Şeması](#veritabanı-şeması)
-- [Lisans](#lisans)
 
 ## Proje Hakkında
 
@@ -35,22 +34,50 @@ Projede aşağıdaki API'ler bulunmaktadır:
 - Personeller API'si: `http://127.0.0.1:8000/api/personeller/`
 - Takımlar API'si: `http://127.0.0.1:8000/api/takimlar/`
 
+![Swagger API](swagger.png)
+![API Root](api1.png)
+![API Root 2](api2.png)
+
 ## Ekran Görüntüleri
 
 ### Giriş Sayfası
-![Giriş Sayfası](images/login.png)
+![Giriş Sayfası](login.png)
+![Giriş Sayfası Alternatif](login2.png)
 
 ### Parça Üretim Ekranı
-![Parça Üretimi](images/parca_uret.png)
+![Parça Üretimi](parca_uretim.png)
+![Parça Üretimi 2](parca_uretim2.png)
+
+### Parçalar Listesi
+![Parçalar Listesi](parcalar.png)
 
 ### Montaj Ekranı
-![Montaj Ekranı](images/montaj.png)
+![Montaj Ekranı](montaj_giris.png)
+
+### Üretilen Uçakların Detayları
+![Üretilen Uçak 1](ucak_uret1.png)
+![Üretilen Uçak 2](ucak_uret2.png)
+![Üretilen Uçak 3](ucak_uret3.png)
+![Üretilen Uçak 4](ucak_uret4.png)
+![Üretilen Uçak 5](ucak_uret5.png)
+
+### Parça Geri Dönüşüm
+![Parça Geri Dönüşüm](geri_donusum.png)
+
+### Admin Panel - Uçaklar
+![Admin Panel - Uçaklar](admin_ucaks.png)
+
+### Admin Panel - Üretilen Uçaklar
+![Admin Panel - Üretilen Uçaklar](admin_uretilen_ucaks.png)
+
+### Eksik Parça Uyarısı
+![Eksik Parça Uyarısı](eksik_parca.png)
 
 ## Veritabanı Şeması
 
 Bu projede kullanılan ilişkisel veritabanı yapısı aşağıdaki gibidir:
 
-![Veritabanı Şeması](images/er_diagram.png)
+![Veritabanı Şeması](er_diagram.png)
 
 Veritabanı ilişkileri:
 
