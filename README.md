@@ -34,50 +34,50 @@ Projede aşağıdaki API'ler bulunmaktadır:
 - Personeller API'si: `http://127.0.0.1:8000/api/personeller/`
 - Takımlar API'si: `http://127.0.0.1:8000/api/takimlar/`
 
-![Swagger API](swagger.png)
-![API Root](api1.png)
-![API Root 2](api2.png)
+![Swagger API](images/swagger.png)
+![API Root](images/api1.png)
+![API Root 2](images/api2.png)
 
 ## Ekran Görüntüleri
 
 ### Giriş Sayfası
-![Giriş Sayfası](login.png)
-![Giriş Sayfası Alternatif](login2.png)
+![Giriş Sayfası](images/login.png)
+![Giriş Sayfası Alternatif](images/login2.png)
 
 ### Parça Üretim Ekranı
-![Parça Üretimi](parca_uretim.png)
-![Parça Üretimi 2](parca_uretim2.png)
+![Parça Üretimi](images/parca_uretim.png)
+![Parça Üretimi 2](images/parca_uretim2.png)
 
 ### Parçalar Listesi
-![Parçalar Listesi](parcalar.png)
+![Parçalar Listesi](images/parcalar.png)
 
 ### Montaj Ekranı
-![Montaj Ekranı](montaj_giris.png)
+![Montaj Ekranı](images/montaj_giris.png)
 
 ### Üretilen Uçakların Detayları
-![Üretilen Uçak 1](ucak_uret1.png)
-![Üretilen Uçak 2](ucak_uret2.png)
-![Üretilen Uçak 3](ucak_uret3.png)
-![Üretilen Uçak 4](ucak_uret4.png)
-![Üretilen Uçak 5](ucak_uret5.png)
+![Üretilen Uçak 1](images/ucak_uret1.png)
+![Üretilen Uçak 2](images/ucak_uret2.png)
+![Üretilen Uçak 3](images/ucak_uret3.png)
+![Üretilen Uçak 4](images/ucak_uret4.png)
+![Üretilen Uçak 5](images/ucak_uret5.png)
 
 ### Parça Geri Dönüşüm
-![Parça Geri Dönüşüm](geri_donusum.png)
+![Parça Geri Dönüşüm](images/geri_donusum.png)
 
 ### Admin Panel - Uçaklar
-![Admin Panel - Uçaklar](admin_ucaks.png)
+![Admin Panel - Uçaklar](images/admin_ucaks.png)
 
 ### Admin Panel - Üretilen Uçaklar
-![Admin Panel - Üretilen Uçaklar](admin_uretilen_ucaks.png)
+![Admin Panel - Üretilen Uçaklar](images/admin_uretilen_ucaks.png)
 
 ### Eksik Parça Uyarısı
-![Eksik Parça Uyarısı](eksik_parca.png)
+![Eksik Parça Uyarısı](images/eksik_parca.png)
 
 ## Veritabanı Şeması
 
 Bu projede kullanılan ilişkisel veritabanı yapısı aşağıdaki gibidir:
 
-![Veritabanı Şeması](er_diagram.png)
+![Veritabanı Şeması](images/er_diagram.png)
 
 Veritabanı ilişkileri:
 
