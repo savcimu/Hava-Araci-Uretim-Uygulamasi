@@ -34,38 +34,38 @@ Projede Django Rest Framework (DRF) kullanılarak, API desteği sunulmuş ve tü
   - Parçaların stokta olması veya eksik olup olmadığına dair uyarı sistemi.
 
 - Uçak montaj işlemi
- - Montaj ekibi, üretilen parçaları kullanarak yeni uçaklar oluşturabilir.
- - Montaj sırasında eksik parçalar için uyarı mesajları.
- - Üretilen uçaklar hakkında detaylı bilgi (kullanılan parçalar, üreten personel, üretim tarihi).
+  - Montaj ekibi, üretilen parçaları kullanarak yeni uçaklar oluşturabilir.
+  - Montaj sırasında eksik parçalar için uyarı mesajları.
+  - Üretilen uçaklar hakkında detaylı bilgi (kullanılan parçalar, üreten personel, üretim tarihi).
 
 - Üretilen uçakların listesi ve detayları
- - Montaj işlemi tamamlanan uçakların listesi ve her uçak için kullanılan parçaların detaylı listesi.
- - Her uçak için montajda kullanılan parçaların üreten personel ve üretim tarihine göre takibi.
- - Üretilen uçaklar için geri dönük analiz yapabilme ve uçakların hangi takımlar tarafından tamamlandığını görüntüleyebilme.
+  - Montaj işlemi tamamlanan uçakların listesi ve her uçak için kullanılan parçaların detaylı listesi.
+  - Her uçak için montajda kullanılan parçaların üreten personel ve üretim tarihine göre takibi.
+  - Üretilen uçaklar için geri dönük analiz yapabilme ve uçakların hangi takımlar tarafından tamamlandığını görüntüleyebilme.
 
 - Eksik parça uyarıları
- - Montaj işlemi sırasında eksik olan parçaların sistemde gösterilmesi ve uyarı mesajları.
- - Eksik parçaların hangi takımlardan üretileceğinin gösterilmesi.
- - Admin paneli ve montaj ekibi için ayrı ayrı eksik parça uyarı sistemi.
+  - Montaj işlemi sırasında eksik olan parçaların sistemde gösterilmesi ve uyarı mesajları.
+  - Eksik parçaların hangi takımlardan üretileceğinin gösterilmesi.
+  - Admin paneli ve montaj ekibi için ayrı ayrı eksik parça uyarı sistemi.
 
 - Django Rest Framework ile API desteği
- - Sistem, API aracılığıyla parçaların, uçakların, personellerin ve takımların yönetilmesine olanak tanır.
- - API üzerinden parça üretimi, montaj işlemleri ve uçakların listelenmesi gibi operasyonlar gerçekleştirilebilir.
- - API çağrıları ile uçak montajı sırasında eksik parça bilgisine erişilebilir.
+  - Sistem, API aracılığıyla parçaların, uçakların, personellerin ve takımların yönetilmesine olanak tanır.
+  - API üzerinden parça üretimi, montaj işlemleri ve uçakların listelenmesi gibi operasyonlar gerçekleştirilebilir.
+  - API çağrıları ile uçak montajı sırasında eksik parça bilgisine erişilebilir.
 
 - Swagger arayüzü ile API dokümantasyonu
- - API'ların Swagger arayüzü üzerinde kolayca test edilmesi ve dokümantasyona erişim imkanı.
- - API endpoint'leri, istek ve yanıt formatları gibi detayların Swagger arayüzü üzerinden incelenmesi.
- - Hangi endpoint'lerin kullanılabileceği ve her endpoint'in döndüğü verilerin detaylı gösterimi.
+  - API'ların Swagger arayüzü üzerinde kolayca test edilmesi ve dokümantasyona erişim imkanı.
+  - API endpoint'leri, istek ve yanıt formatları gibi detayların Swagger arayüzü üzerinden incelenmesi.
+  - Hangi endpoint'lerin kullanılabileceği ve her endpoint'in döndüğü verilerin detaylı gösterimi.
 
 - Geri Dönüşüm İşlemleri
- - Üretilen ve montajda kullanılmayan parçaların geri dönüşüme gönderilmesi işlemleri.
- - Geri dönüşüm işlemi sonrası stok durumunun güncellenmesi ve ilgili parça bilgisine erişim.
+  - Üretilen ve montajda kullanılmayan parçaların geri dönüşüme gönderilmesi işlemleri.
+  - Geri dönüşüm işlemi sonrası stok durumunun güncellenmesi ve ilgili parça bilgisine erişim.
 
 - Kullanıcı Yetkilendirme ve Doğrulama
- - Kullanıcılar yetkilerine göre farklı işlemler yapabilir (admin, montaj ekibi, parça üretim ekibi vb.).
- - Adminler, sistemdeki tüm kullanıcıları yönetebilir, yetkilerini belirleyebilir ve hangi takıma ait olduklarını düzenleyebilir.
- - Kullanıcı giriş ve doğrulama işlemleri, personel bazlı olarak yapılır.
+  - Kullanıcılar yetkilerine göre farklı işlemler yapabilir (admin, montaj ekibi, parça üretim ekibi vb.).
+  - Adminler, sistemdeki tüm kullanıcıları yönetebilir, yetkilerini belirleyebilir ve hangi takıma ait olduklarını düzenleyebilir.
+  - Kullanıcı giriş ve doğrulama işlemleri, personel bazlı olarak yapılır.
 
 
 ## API Belgeleri
