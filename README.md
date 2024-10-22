@@ -13,6 +13,60 @@ Bu proje, İHA parçalarının üretimini ve montajını yönetmeyi amaçlayan b
 
 İHA üretim sürecinde montaj, parça üretimi ve yönetimi gibi süreçlerin yürütülmesine olanak sağlayan bir sistemdir. Kullanıcılar, takımlarına göre parça üretimi gerçekleştirebilir, montaj ekibi ise üretilen parçaları birleştirerek uçak üretebilir.
 
+    1. Parça Yönetimi
+
+    Farklı takımların (örneğin, kanat, gövde, kuyruk, aviyonik vb.) sorumlu olduğu parçaların üretimi ve yönetimi.
+    Parçaların uçak tipine göre üretimi ve takip edilmesi.
+    Parçaların stokta olması veya eksik olup olmadığına dair uyarı sistemi.
+
+    2. Uçak Montaj Yönetimi
+
+    Montaj ekibi, üretilen parçaları kullanarak yeni uçaklar oluşturabilir.
+    Montaj sırasında eksik parçalar için uyarı mesajları.
+    Üretilen uçaklar hakkında detaylı bilgi (kullanılan parçalar, üreten personel, üretim tarihi).
+
+    3. Personel Yönetimi
+
+    Takımlara atanmış personellerin sisteme giriş yapabilmesi ve yetkilere göre işlemler yapabilmesi.
+    Her personelin ürettiği parçaların ve montajladığı uçakların takibi.
+
+    4. Takım Bazlı Görevler
+
+    Personeller sadece atanmış oldukları takımlara ait parçalarla ilgili işlem yapabilir.
+    Montaj ekibi dışındaki personeller, yalnızca kendi takımındaki parçaların üretim ve yönetim işlemlerini yapabilir.
+
+    5. Kullanıcı Yetkilendirme ve Rol Yönetimi
+
+    Admin, montaj ekibi ve üretim ekibi gibi farklı roller için yetkilendirme.
+    Her kullanıcının yetkileri doğrultusunda farklı işlem yapabilmesi.
+
+    6. Eksik Parça Uyarıları
+
+    Uçak montajında eksik parçalar varsa montaj ekibine ve ilgili takımlara uyarı mesajları gösterilir.
+
+    7. Swagger ile API Dökümantasyonu
+
+    Django Rest Framework ile sağlanan API'lerin Swagger arayüzü ile dökümantasyonu.
+    Her bir veri tabanı tablosuna (parçalar, uçaklar, takımlar, personeller) REST API endpoint'leri ile erişim.
+
+    8. Geri Dönüşüm İşlemleri
+
+    Yanlış üretilen veya hatalı olan parçaların geri dönüşüme gönderilebilmesi.
+    Geri dönüşüm işlemi sonrası parça listelerinden düşülmesi ve sistemde izlenmesi.
+
+    9. Detaylı Üretim ve Montaj Raporlama
+
+    Her parçanın ve uçağın üretim tarihi, üreten kişi gibi bilgilerin kaydedilmesi ve raporlanması.
+    Üretilen uçakların ve kullanılan parçaların detaylı görüntülenmesi.
+
+    10. Görselli Dashboard
+
+    Parça stoklarının ve üretilen uçakların durumu hakkında görsel göstergeler (örneğin: eksik parçalar, montajlanan uçak sayısı).
+
+    11. JSON ve XML Formatında Veri Çıktısı
+
+    Üretilen veriler API aracılığıyla JSON ve XML formatlarında dışa aktarılabilir.
+
 ## Özellikler
 - Parça üretimi (takım bazlı)
 - Uçak montaj işlemi
@@ -96,6 +150,6 @@ Veritabanı ilişkileri:
 
 - **Personel**: Takımlara bağlı olarak parçaları üretir.
 - **Parça**: Her parça bir uçağa özeldir ve üreten personel bilgisi ile birlikte kaydedilir.
-- **Uçak**: Montajlama işlemi tamamlandığında parçalarla ilişkilendirilir ve üretilmiş olur.
-- **Takım**: Takımlar belirli parçalardan sorumludur. Her takım kendi parçasını üretir.
+- **Uçak**: Admin uçak ekler
+- **Takım**: Admin takım ekler
 - **Üretilen Uçak**: Montaj işlemi tamamlandıktan sonra uçaklar bu tabloda saklanır ve hangi parçaların kullanıldığı bilgisi tutulur.
