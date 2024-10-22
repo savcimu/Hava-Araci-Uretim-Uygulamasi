@@ -11,69 +11,62 @@ Bu proje, İHA parçalarının üretimini ve montajını yönetmeyi amaçlayan b
 
 ## Proje Hakkında
 
-İHA üretim sürecinde montaj, parça üretimi ve yönetimi gibi süreçlerin yürütülmesine olanak sağlayan bir sistemdir. Kullanıcılar, takımlarına göre parça üretimi gerçekleştirebilir, montaj ekibi ise üretilen parçaları birleştirerek uçak üretebilir.
+Bu proje, İnsansız Hava Aracı (İHA) üretim sürecinin etkin ve düzenli bir şekilde yönetilmesini sağlayan bir sistemdir. Proje, İHA parçalarının üretiminden montaj aşamasına kadar olan tüm süreçlerin dijital olarak izlenebilmesini ve yönetilebilmesini hedefler. Django tabanlı geliştirilen bu uygulama, farklı takımların sorumlu olduğu parça üretim sürecini yönetir ve üretilen parçaların uçak montajında kullanılmasını sağlar.
 
-    1. Parça Yönetimi
+Sistem, üretim ve montaj aşamalarında eksik parça uyarıları vererek sürecin hatasız ilerlemesine yardımcı olur. Her parça, hangi takım tarafından üretildiği, hangi uçak için üretildiği ve hangi personel tarafından üretildiği gibi bilgilerle kaydedilir. Bu sayede her aşamada şeffaf bir izlenebilirlik sağlanır.
 
-    Farklı takımların (örneğin, kanat, gövde, kuyruk, aviyonik vb.) sorumlu olduğu parçaların üretimi ve yönetimi.
-    Parçaların uçak tipine göre üretimi ve takip edilmesi.
-    Parçaların stokta olması veya eksik olup olmadığına dair uyarı sistemi.
+Montaj ekibi, gerekli tüm parçalar tamamlandığında bu parçaları bir araya getirerek uçakları oluşturur. Üretilen uçaklar, kullanılan parçalar, montajda görev alan personel ve üretim tarihleri gibi bilgilerle kaydedilir. Böylece hem parça hem de montaj süreçleri detaylı bir şekilde takip edilebilir.
 
-    2. Uçak Montaj Yönetimi
+Projede Django Rest Framework (DRF) kullanılarak, API desteği sunulmuş ve tüm bu süreçlerin dış sistemlerle de entegre edilebilmesi sağlanmıştır. Swagger arayüzü sayesinde bu API'lar kolayca test edilebilir ve belgelenebilir.
 
-    Montaj ekibi, üretilen parçaları kullanarak yeni uçaklar oluşturabilir.
-    Montaj sırasında eksik parçalar için uyarı mesajları.
-    Üretilen uçaklar hakkında detaylı bilgi (kullanılan parçalar, üreten personel, üretim tarihi).
-
-    3. Personel Yönetimi
-
-    Takımlara atanmış personellerin sisteme giriş yapabilmesi ve yetkilere göre işlemler yapabilmesi.
-    Her personelin ürettiği parçaların ve montajladığı uçakların takibi.
-
-    4. Takım Bazlı Görevler
-
-    Personeller sadece atanmış oldukları takımlara ait parçalarla ilgili işlem yapabilir.
-    Montaj ekibi dışındaki personeller, yalnızca kendi takımındaki parçaların üretim ve yönetim işlemlerini yapabilir.
-
-    5. Kullanıcı Yetkilendirme ve Rol Yönetimi
-
-    Admin, montaj ekibi ve üretim ekibi gibi farklı roller için yetkilendirme.
-    Her kullanıcının yetkileri doğrultusunda farklı işlem yapabilmesi.
-
-    6. Eksik Parça Uyarıları
-
-    Uçak montajında eksik parçalar varsa montaj ekibine ve ilgili takımlara uyarı mesajları gösterilir.
-
-    7. Swagger ile API Dökümantasyonu
-
-    Django Rest Framework ile sağlanan API'lerin Swagger arayüzü ile dökümantasyonu.
-    Her bir veri tabanı tablosuna (parçalar, uçaklar, takımlar, personeller) REST API endpoint'leri ile erişim.
-
-    8. Geri Dönüşüm İşlemleri
-
-    Yanlış üretilen veya hatalı olan parçaların geri dönüşüme gönderilebilmesi.
-    Geri dönüşüm işlemi sonrası parça listelerinden düşülmesi ve sistemde izlenmesi.
-
-    9. Detaylı Üretim ve Montaj Raporlama
-
-    Her parçanın ve uçağın üretim tarihi, üreten kişi gibi bilgilerin kaydedilmesi ve raporlanması.
-    Üretilen uçakların ve kullanılan parçaların detaylı görüntülenmesi.
-
-    10. Görselli Dashboard
-
-    Parça stoklarının ve üretilen uçakların durumu hakkında görsel göstergeler (örneğin: eksik parçalar, montajlanan uçak sayısı).
-
-    11. JSON ve XML Formatında Veri Çıktısı
-
-    Üretilen veriler API aracılığıyla JSON ve XML formatlarında dışa aktarılabilir.
+- Bu projedeki ana işlevler:
+    - Farklı takımların üretim sürecini yönetme
+    - Parça bazlı eksik parça takip ve uyarı sistemi
+    - Montaj ekibinin uçak üretimini yönetmesi
+    - Üretilen uçakların detaylı listesi ve üretim sürecine dair bilgiler
+    - Geri dönüşüm ve parça yönetimi
+    - API desteği ve dış sistemlerle entegrasyon
 
 ## Özellikler
 - Parça üretimi (takım bazlı)
+  - Farklı takımların (örneğin, kanat, gövde, kuyruk, aviyonik vb.) sorumlu olduğu parçaların üretimi ve yönetimi.
+  - Parçaların uçak tipine göre üretimi ve takip edilmesi.
+  - Parçaların stokta olması veya eksik olup olmadığına dair uyarı sistemi.
+
 - Uçak montaj işlemi
+ - Montaj ekibi, üretilen parçaları kullanarak yeni uçaklar oluşturabilir.
+ - Montaj sırasında eksik parçalar için uyarı mesajları.
+ - Üretilen uçaklar hakkında detaylı bilgi (kullanılan parçalar, üreten personel, üretim tarihi).
+
 - Üretilen uçakların listesi ve detayları
+ - Montaj işlemi tamamlanan uçakların listesi ve her uçak için kullanılan parçaların detaylı listesi.
+ - Her uçak için montajda kullanılan parçaların üreten personel ve üretim tarihine göre takibi.
+ - Üretilen uçaklar için geri dönük analiz yapabilme ve uçakların hangi takımlar tarafından tamamlandığını görüntüleyebilme.
+
 - Eksik parça uyarıları
+ - Montaj işlemi sırasında eksik olan parçaların sistemde gösterilmesi ve uyarı mesajları.
+ - Eksik parçaların hangi takımlardan üretileceğinin gösterilmesi.
+ - Admin paneli ve montaj ekibi için ayrı ayrı eksik parça uyarı sistemi.
+
 - Django Rest Framework ile API desteği
+ - Sistem, API aracılığıyla parçaların, uçakların, personellerin ve takımların yönetilmesine olanak tanır.
+ - API üzerinden parça üretimi, montaj işlemleri ve uçakların listelenmesi gibi operasyonlar gerçekleştirilebilir.
+ - API çağrıları ile uçak montajı sırasında eksik parça bilgisine erişilebilir.
+
 - Swagger arayüzü ile API dokümantasyonu
+ - API'ların Swagger arayüzü üzerinde kolayca test edilmesi ve dokümantasyona erişim imkanı.
+ - API endpoint'leri, istek ve yanıt formatları gibi detayların Swagger arayüzü üzerinden incelenmesi.
+ - Hangi endpoint'lerin kullanılabileceği ve her endpoint'in döndüğü verilerin detaylı gösterimi.
+
+- Geri Dönüşüm İşlemleri
+ - Üretilen ve montajda kullanılmayan parçaların geri dönüşüme gönderilmesi işlemleri.
+ - Geri dönüşüm işlemi sonrası stok durumunun güncellenmesi ve ilgili parça bilgisine erişim.
+
+- Kullanıcı Yetkilendirme ve Doğrulama
+ - Kullanıcılar yetkilerine göre farklı işlemler yapabilir (admin, montaj ekibi, parça üretim ekibi vb.).
+ - Adminler, sistemdeki tüm kullanıcıları yönetebilir, yetkilerini belirleyebilir ve hangi takıma ait olduklarını düzenleyebilir.
+ - Kullanıcı giriş ve doğrulama işlemleri, personel bazlı olarak yapılır.
+
 
 ## API Belgeleri
 
